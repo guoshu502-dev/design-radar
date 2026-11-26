@@ -63,6 +63,83 @@
   ],
   "snapshots": [
     {
+      "id": "1ca4f61f741caa7a3479",
+      "brand": "Ashley",
+      "device": "Mobile",
+      "ts": "2026-11-26T10:13:29+00:00",
+      "url": "https://www.ashleyfurniture.com/",
+      "image": "shots/1ca4f61f741caa7a3479.jpg",
+      "previous": "259beab693077a457ac2",
+      "score": 0.17661458333333332,
+      "kind": "candidate"
+    },
+    {
+      "id": "2c5abbebf02960596bb9",
+      "brand": "Ashley",
+      "device": "PC",
+      "ts": "2026-11-26T10:13:29+00:00",
+      "url": "https://www.ashleyfurniture.com/",
+      "image": "shots/2c5abbebf02960596bb9.jpg",
+      "previous": "73656fde19b538470dd9",
+      "score": 0.2799479166666667,
+      "kind": "candidate"
+    },
+    {
+      "id": "b1a52640f4773a1dca28",
+      "brand": "Amazon",
+      "device": "Mobile",
+      "ts": "2026-11-26T10:13:29+00:00",
+      "url": "https://www.amazon.com/",
+      "image": "shots/b1a52640f4773a1dca28.jpg",
+      "previous": "1037dbd1ed50df2feff7",
+      "score": 0.44994791666666667,
+      "kind": "candidate"
+    },
+    {
+      "id": "8a2835846409a036a356",
+      "brand": "Amazon",
+      "device": "PC",
+      "ts": "2026-11-26T10:13:29+00:00",
+      "url": "https://www.amazon.com/",
+      "image": "shots/8a2835846409a036a356.jpg",
+      "previous": "85d98d7b999ae5faa4f4",
+      "score": 0.5172569444444445,
+      "kind": "candidate"
+    },
+    {
+      "id": "352b831c0a129a720756",
+      "brand": "Walmart",
+      "device": "Mobile",
+      "ts": "2026-11-26T10:13:29+00:00",
+      "url": "https://www.walmart.com/",
+      "image": "shots/352b831c0a129a720756.jpg",
+      "previous": "392c20af70ec84166f17",
+      "score": 0.8970138888888889,
+      "kind": "candidate"
+    },
+    {
+      "id": "ad1f87af4e3ecdca3408",
+      "brand": "Walmart",
+      "device": "PC",
+      "ts": "2026-11-26T10:13:29+00:00",
+      "url": "https://www.walmart.com/",
+      "image": "shots/ad1f87af4e3ecdca3408.jpg",
+      "previous": "bb1b34d58a76f5fb6a13",
+      "score": 0.9778645833333334,
+      "kind": "candidate"
+    },
+    {
+      "id": "ea8a8be6e653edd25ee6",
+      "brand": "VEVOR",
+      "device": "PC",
+      "ts": "2026-11-26T10:13:29+00:00",
+      "url": "https://www.vevor.com/",
+      "image": "shots/ea8a8be6e653edd25ee6.jpg",
+      "previous": "afef0a34aa494d21ef34",
+      "score": 0.8335416666666666,
+      "kind": "candidate"
+    },
+    {
       "id": "259beab693077a457ac2",
       "brand": "Ashley",
       "device": "Mobile",
@@ -288,213 +365,213 @@
       "brand": "VEVOR",
       "device": "PC",
       "status": "ok",
-      "message": "baseline",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "message": "candidate",
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "VEVOR",
       "device": "Mobile",
       "status": "ok",
-      "message": "baseline",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "message": "stable",
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "Homary",
       "device": "PC",
       "status": "ok",
-      "message": "baseline",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "message": "stable",
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "Homary",
       "device": "Mobile",
       "status": "ok",
-      "message": "baseline",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "message": "stable",
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "POVISON",
       "device": "PC",
       "status": "ok",
-      "message": "baseline",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "message": "stable",
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "POVISON",
       "device": "Mobile",
       "status": "ok",
-      "message": "baseline",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "message": "stable",
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "Wayfair",
       "device": "PC",
       "status": "error",
       "message": "页面不可用或疑似访问限制",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "Wayfair",
       "device": "Mobile",
       "status": "error",
       "message": "页面不可用或疑似访问限制",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "IKEA",
       "device": "PC",
       "status": "ok",
-      "message": "baseline",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "message": "stable",
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "IKEA",
       "device": "Mobile",
       "status": "ok",
-      "message": "baseline",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "message": "stable",
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "Home Depot",
       "device": "PC",
       "status": "ok",
-      "message": "baseline",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "message": "stable",
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "Home Depot",
       "device": "Mobile",
       "status": "ok",
-      "message": "baseline",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "message": "stable",
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "Target",
       "device": "PC",
       "status": "ok",
-      "message": "baseline",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "message": "stable",
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "Target",
       "device": "Mobile",
       "status": "ok",
-      "message": "baseline",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "message": "stable",
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "Walmart",
       "device": "PC",
       "status": "ok",
-      "message": "baseline",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "message": "candidate",
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "Walmart",
       "device": "Mobile",
       "status": "ok",
-      "message": "baseline",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "message": "candidate",
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "Amazon",
       "device": "PC",
       "status": "ok",
-      "message": "baseline",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "message": "candidate",
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "Amazon",
       "device": "Mobile",
       "status": "ok",
-      "message": "baseline",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "message": "candidate",
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "West Elm",
       "device": "PC",
       "status": "error",
       "message": "页面不可用或疑似访问限制",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "West Elm",
       "device": "Mobile",
       "status": "error",
       "message": "页面不可用或疑似访问限制",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "Article",
       "device": "PC",
       "status": "ok",
-      "message": "baseline",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "message": "stable",
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "Article",
       "device": "Mobile",
       "status": "ok",
-      "message": "baseline",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "message": "stable",
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "Ashley",
       "device": "PC",
       "status": "ok",
-      "message": "baseline",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "message": "candidate",
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "Ashley",
       "device": "Mobile",
       "status": "ok",
-      "message": "baseline",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "message": "candidate",
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "Pottery Barn",
       "device": "PC",
       "status": "error",
       "message": "页面不可用或疑似访问限制",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "Pottery Barn",
       "device": "Mobile",
       "status": "error",
       "message": "页面不可用或疑似访问限制",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "vidaXL",
       "device": "PC",
       "status": "error",
       "message": "页面不可用或疑似访问限制",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "vidaXL",
       "device": "Mobile",
       "status": "error",
       "message": "页面不可用或疑似访问限制",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "Aosom",
       "device": "PC",
       "status": "error",
       "message": "页面不可用或疑似访问限制",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "ts": "2026-11-26T10:13:29+00:00"
     },
     {
       "brand": "Aosom",
       "device": "Mobile",
       "status": "error",
       "message": "页面不可用或疑似访问限制",
-      "ts": "2026-11-26T06:45:44+00:00"
+      "ts": "2026-11-26T10:13:29+00:00"
     }
   ],
-  "last_run": "2026-11-26T06:45:44+00:00",
+  "last_run": "2026-11-26T10:13:29+00:00",
   "threshold": 0.08
 }
