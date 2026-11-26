@@ -1,1 +1,500 @@
-{"sites": [{"name": "VEVOR", "url": "https://www.vevor.com/"}, {"name": "Homary", "url": "https://www.homary.com/"}, {"name": "POVISON", "url": "https://www.povison.com/"}, {"name": "Wayfair", "url": "https://www.wayfair.com/"}, {"name": "IKEA", "url": "https://www.ikea.com/us/en/"}, {"name": "Home Depot", "url": "https://www.homedepot.com/"}, {"name": "Target", "url": "https://www.target.com/"}, {"name": "Walmart", "url": "https://www.walmart.com/"}, {"name": "Amazon", "url": "https://www.amazon.com/"}, {"name": "West Elm", "url": "https://www.westelm.com/"}, {"name": "Article", "url": "https://www.article.com/"}, {"name": "Ashley", "url": "https://www.ashleyfurniture.com/"}, {"name": "Pottery Barn", "url": "https://www.potterybarn.com/"}, {"name": "vidaXL", "url": "https://www.vidaxl.com/"}, {"name": "Aosom", "url": "https://www.aosom.com/"}], "snapshots": [], "checks": [], "last_run": null}
+{
+  "sites": [
+    {
+      "name": "VEVOR",
+      "url": "https://www.vevor.com/"
+    },
+    {
+      "name": "Homary",
+      "url": "https://www.homary.com/"
+    },
+    {
+      "name": "POVISON",
+      "url": "https://www.povison.com/"
+    },
+    {
+      "name": "Wayfair",
+      "url": "https://www.wayfair.com/"
+    },
+    {
+      "name": "IKEA",
+      "url": "https://www.ikea.com/us/en/"
+    },
+    {
+      "name": "Home Depot",
+      "url": "https://www.homedepot.com/"
+    },
+    {
+      "name": "Target",
+      "url": "https://www.target.com/"
+    },
+    {
+      "name": "Walmart",
+      "url": "https://www.walmart.com/"
+    },
+    {
+      "name": "Amazon",
+      "url": "https://www.amazon.com/"
+    },
+    {
+      "name": "West Elm",
+      "url": "https://www.westelm.com/"
+    },
+    {
+      "name": "Article",
+      "url": "https://www.article.com/"
+    },
+    {
+      "name": "Ashley",
+      "url": "https://www.ashleyfurniture.com/"
+    },
+    {
+      "name": "Pottery Barn",
+      "url": "https://www.potterybarn.com/"
+    },
+    {
+      "name": "vidaXL",
+      "url": "https://www.vidaxl.com/"
+    },
+    {
+      "name": "Aosom",
+      "url": "https://www.aosom.com/"
+    }
+  ],
+  "snapshots": [
+    {
+      "id": "259beab693077a457ac2",
+      "brand": "Ashley",
+      "device": "Mobile",
+      "ts": "2026-11-26T06:45:44+00:00",
+      "url": "https://www.ashleyfurniture.com/",
+      "image": "shots/259beab693077a457ac2.jpg",
+      "previous": null,
+      "score": null,
+      "kind": "baseline"
+    },
+    {
+      "id": "73656fde19b538470dd9",
+      "brand": "Ashley",
+      "device": "PC",
+      "ts": "2026-11-26T06:45:44+00:00",
+      "url": "https://www.ashleyfurniture.com/",
+      "image": "shots/73656fde19b538470dd9.jpg",
+      "previous": null,
+      "score": null,
+      "kind": "baseline"
+    },
+    {
+      "id": "8c8decc8404f87684c6b",
+      "brand": "Article",
+      "device": "Mobile",
+      "ts": "2026-11-26T06:45:44+00:00",
+      "url": "https://www.article.com/",
+      "image": "shots/8c8decc8404f87684c6b.jpg",
+      "previous": null,
+      "score": null,
+      "kind": "baseline"
+    },
+    {
+      "id": "419cbfc988ef30297501",
+      "brand": "Article",
+      "device": "PC",
+      "ts": "2026-11-26T06:45:44+00:00",
+      "url": "https://www.article.com/",
+      "image": "shots/419cbfc988ef30297501.jpg",
+      "previous": null,
+      "score": null,
+      "kind": "baseline"
+    },
+    {
+      "id": "1037dbd1ed50df2feff7",
+      "brand": "Amazon",
+      "device": "Mobile",
+      "ts": "2026-11-26T06:45:44+00:00",
+      "url": "https://www.amazon.com/",
+      "image": "shots/1037dbd1ed50df2feff7.jpg",
+      "previous": null,
+      "score": null,
+      "kind": "baseline"
+    },
+    {
+      "id": "85d98d7b999ae5faa4f4",
+      "brand": "Amazon",
+      "device": "PC",
+      "ts": "2026-11-26T06:45:44+00:00",
+      "url": "https://www.amazon.com/",
+      "image": "shots/85d98d7b999ae5faa4f4.jpg",
+      "previous": null,
+      "score": null,
+      "kind": "baseline"
+    },
+    {
+      "id": "392c20af70ec84166f17",
+      "brand": "Walmart",
+      "device": "Mobile",
+      "ts": "2026-11-26T06:45:44+00:00",
+      "url": "https://www.walmart.com/",
+      "image": "shots/392c20af70ec84166f17.jpg",
+      "previous": null,
+      "score": null,
+      "kind": "baseline"
+    },
+    {
+      "id": "bb1b34d58a76f5fb6a13",
+      "brand": "Walmart",
+      "device": "PC",
+      "ts": "2026-11-26T06:45:44+00:00",
+      "url": "https://www.walmart.com/",
+      "image": "shots/bb1b34d58a76f5fb6a13.jpg",
+      "previous": null,
+      "score": null,
+      "kind": "baseline"
+    },
+    {
+      "id": "779b66c81a46a7c28589",
+      "brand": "Target",
+      "device": "Mobile",
+      "ts": "2026-11-26T06:45:44+00:00",
+      "url": "https://www.target.com/",
+      "image": "shots/779b66c81a46a7c28589.jpg",
+      "previous": null,
+      "score": null,
+      "kind": "baseline"
+    },
+    {
+      "id": "83a4186d142dab1e2063",
+      "brand": "Target",
+      "device": "PC",
+      "ts": "2026-11-26T06:45:44+00:00",
+      "url": "https://www.target.com/",
+      "image": "shots/83a4186d142dab1e2063.jpg",
+      "previous": null,
+      "score": null,
+      "kind": "baseline"
+    },
+    {
+      "id": "254cd4d02709c021ea83",
+      "brand": "Home Depot",
+      "device": "Mobile",
+      "ts": "2026-11-26T06:45:44+00:00",
+      "url": "https://www.homedepot.com/",
+      "image": "shots/254cd4d02709c021ea83.jpg",
+      "previous": null,
+      "score": null,
+      "kind": "baseline"
+    },
+    {
+      "id": "5193e63e981adf8ff5e4",
+      "brand": "Home Depot",
+      "device": "PC",
+      "ts": "2026-11-26T06:45:44+00:00",
+      "url": "https://www.homedepot.com/",
+      "image": "shots/5193e63e981adf8ff5e4.jpg",
+      "previous": null,
+      "score": null,
+      "kind": "baseline"
+    },
+    {
+      "id": "a20f468db3b8fff53934",
+      "brand": "IKEA",
+      "device": "Mobile",
+      "ts": "2026-11-26T06:45:44+00:00",
+      "url": "https://www.ikea.com/us/en/",
+      "image": "shots/a20f468db3b8fff53934.jpg",
+      "previous": null,
+      "score": null,
+      "kind": "baseline"
+    },
+    {
+      "id": "86ab967b5890f5b20407",
+      "brand": "IKEA",
+      "device": "PC",
+      "ts": "2026-11-26T06:45:44+00:00",
+      "url": "https://www.ikea.com/us/en/",
+      "image": "shots/86ab967b5890f5b20407.jpg",
+      "previous": null,
+      "score": null,
+      "kind": "baseline"
+    },
+    {
+      "id": "0471e14651222b4d2f86",
+      "brand": "POVISON",
+      "device": "Mobile",
+      "ts": "2026-11-26T06:45:44+00:00",
+      "url": "https://www.povison.com/",
+      "image": "shots/0471e14651222b4d2f86.jpg",
+      "previous": null,
+      "score": null,
+      "kind": "baseline"
+    },
+    {
+      "id": "369119ed6738d8b45845",
+      "brand": "POVISON",
+      "device": "PC",
+      "ts": "2026-11-26T06:45:44+00:00",
+      "url": "https://www.povison.com/",
+      "image": "shots/369119ed6738d8b45845.jpg",
+      "previous": null,
+      "score": null,
+      "kind": "baseline"
+    },
+    {
+      "id": "993df4cdfceb8dbbeed9",
+      "brand": "Homary",
+      "device": "Mobile",
+      "ts": "2026-11-26T06:45:44+00:00",
+      "url": "https://www.homary.com/",
+      "image": "shots/993df4cdfceb8dbbeed9.jpg",
+      "previous": null,
+      "score": null,
+      "kind": "baseline"
+    },
+    {
+      "id": "e4d4be9a124304d86418",
+      "brand": "Homary",
+      "device": "PC",
+      "ts": "2026-11-26T06:45:44+00:00",
+      "url": "https://www.homary.com/",
+      "image": "shots/e4d4be9a124304d86418.jpg",
+      "previous": null,
+      "score": null,
+      "kind": "baseline"
+    },
+    {
+      "id": "208bd746928f8839790d",
+      "brand": "VEVOR",
+      "device": "Mobile",
+      "ts": "2026-11-26T06:45:44+00:00",
+      "url": "https://www.vevor.com/",
+      "image": "shots/208bd746928f8839790d.jpg",
+      "previous": null,
+      "score": null,
+      "kind": "baseline"
+    },
+    {
+      "id": "afef0a34aa494d21ef34",
+      "brand": "VEVOR",
+      "device": "PC",
+      "ts": "2026-11-26T06:45:44+00:00",
+      "url": "https://www.vevor.com/",
+      "image": "shots/afef0a34aa494d21ef34.jpg",
+      "previous": null,
+      "score": null,
+      "kind": "baseline"
+    }
+  ],
+  "checks": [
+    {
+      "brand": "VEVOR",
+      "device": "PC",
+      "status": "ok",
+      "message": "baseline",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "VEVOR",
+      "device": "Mobile",
+      "status": "ok",
+      "message": "baseline",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "Homary",
+      "device": "PC",
+      "status": "ok",
+      "message": "baseline",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "Homary",
+      "device": "Mobile",
+      "status": "ok",
+      "message": "baseline",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "POVISON",
+      "device": "PC",
+      "status": "ok",
+      "message": "baseline",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "POVISON",
+      "device": "Mobile",
+      "status": "ok",
+      "message": "baseline",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "Wayfair",
+      "device": "PC",
+      "status": "error",
+      "message": "页面不可用或疑似访问限制",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "Wayfair",
+      "device": "Mobile",
+      "status": "error",
+      "message": "页面不可用或疑似访问限制",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "IKEA",
+      "device": "PC",
+      "status": "ok",
+      "message": "baseline",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "IKEA",
+      "device": "Mobile",
+      "status": "ok",
+      "message": "baseline",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "Home Depot",
+      "device": "PC",
+      "status": "ok",
+      "message": "baseline",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "Home Depot",
+      "device": "Mobile",
+      "status": "ok",
+      "message": "baseline",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "Target",
+      "device": "PC",
+      "status": "ok",
+      "message": "baseline",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "Target",
+      "device": "Mobile",
+      "status": "ok",
+      "message": "baseline",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "Walmart",
+      "device": "PC",
+      "status": "ok",
+      "message": "baseline",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "Walmart",
+      "device": "Mobile",
+      "status": "ok",
+      "message": "baseline",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "Amazon",
+      "device": "PC",
+      "status": "ok",
+      "message": "baseline",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "Amazon",
+      "device": "Mobile",
+      "status": "ok",
+      "message": "baseline",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "West Elm",
+      "device": "PC",
+      "status": "error",
+      "message": "页面不可用或疑似访问限制",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "West Elm",
+      "device": "Mobile",
+      "status": "error",
+      "message": "页面不可用或疑似访问限制",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "Article",
+      "device": "PC",
+      "status": "ok",
+      "message": "baseline",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "Article",
+      "device": "Mobile",
+      "status": "ok",
+      "message": "baseline",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "Ashley",
+      "device": "PC",
+      "status": "ok",
+      "message": "baseline",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "Ashley",
+      "device": "Mobile",
+      "status": "ok",
+      "message": "baseline",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "Pottery Barn",
+      "device": "PC",
+      "status": "error",
+      "message": "页面不可用或疑似访问限制",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "Pottery Barn",
+      "device": "Mobile",
+      "status": "error",
+      "message": "页面不可用或疑似访问限制",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "vidaXL",
+      "device": "PC",
+      "status": "error",
+      "message": "页面不可用或疑似访问限制",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "vidaXL",
+      "device": "Mobile",
+      "status": "error",
+      "message": "页面不可用或疑似访问限制",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "Aosom",
+      "device": "PC",
+      "status": "error",
+      "message": "页面不可用或疑似访问限制",
+      "ts": "2026-11-26T06:45:44+00:00"
+    },
+    {
+      "brand": "Aosom",
+      "device": "Mobile",
+      "status": "error",
+      "message": "页面不可用或疑似访问限制",
+      "ts": "2026-11-26T06:45:44+00:00"
+    }
+  ],
+  "last_run": "2026-11-26T06:45:44+00:00",
+  "threshold": 0.08
+}
