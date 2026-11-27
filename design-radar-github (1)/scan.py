@@ -16,7 +16,7 @@ ADVICE={'home':'检查首屏核心卖点、导航层级、CTA 对比度；对 CO
 def load(p,default): return json.loads(p.read_text(encoding='utf-8')) if p.exists() else default
 
 def save(p,value):
- p.parent.mkdir(parents=True,exist_ok=True); tmp=p.with_suffix('.tmp'); tmp.write_text(json.dumps(value,ensure_ascii=False,indent=2),encoding='utf-8'); tmp.replace(p)
+ p.parent.mkdir(parents=True,exist_ok=True); tmp=p.with_suffix('.tmp'); tmp.write_text(json.dumps(value,ensure_ascii=True,indent=2),encoding='utf-8'); tmp.replace(p)
 
 def key(x): return (x['brand'],x['device'],x.get('page_type','home'))
 
@@ -47,7 +47,7 @@ def diff(a,b):
   a=aa.convert('RGB').resize((320,180)); b=bb.convert('RGB').resize((320,180)); return sum(max(p)>35 for p in ImageChops.difference(a,b).getdata())/(320*180)
 
 def meta(page):
- return page.evaluate('''() => {const clean=t=>(t||'').trim().replace(/\\s+/g,' ').slice(0,100); const unique=a=>[...new Set(a.filter(Boolean))];return {title:document.title.slice(0,160),headings:unique([...document.querySelectorAll('h1,h2')].filter(e=>e.getClientRects().length).map(e=>clean(e.innerText))).slice(0,16),navigation:unique([...document.querySelectorAll('header a,nav a')].filter(e=>e.getClientRects().length).map(e=>clean(e.innerText))).slice(0,30),cta:unique([...document.querySelectorAll('button,a[role=button],input[type=submit]')].filter(e=>e.getClientRects().length).map(e=>clean(e.innerText||e.value||e.getAttribute('aria-label')))).slice(0,24)}}''')
+ return page.evaluate('''() => {const clean=t=>Array.from((t||'').trim().replace(/\\s+/g,' ')).slice(0,100).join(''); const unique=a=>[...new Set(a.filter(Boolean))];return {title:Array.from(document.title).slice(0,160).join(''),headings:unique([...document.querySelectorAll('h1,h2')].filter(e=>e.getClientRects().length).map(e=>clean(e.innerText))).slice(0,16),navigation:unique([...document.querySelectorAll('header a,nav a')].filter(e=>e.getClientRects().length).map(e=>clean(e.innerText))).slice(0,30),cta:unique([...document.querySelectorAll('button,a[role=button],input[type=submit]')].filter(e=>e.getClientRects().length).map(e=>clean(e.innerText||e.value||e.getAttribute('aria-label')))).slice(0,24)}}''')
 
 def insights(prev,current,typ,score,changed_url):
  facts=[]; categories=[]
@@ -126,49 +126,3 @@ def ai_review(state,now):
    else: s['analysis']['ai_error']='模型未返回分析文字'
   except Exception as e: s['analysis']['ai_error']='模型请求失败（'+type(e).__name__+'），已保留规则建议'; print('AI analysis failed:',type(e).__name__,flush=True)
  return 'enabled'
-
-def main():
- SHOTS.mkdir(parents=True,exist_ok=True); sites=load(ROOT/'sites.json',[]); state=load(FILE,{'sites':sites,'snapshots':[],'checks':[]}); now=datetime.now(timezone.utc).isoformat(timespec='seconds'); checks=[]
- for s in state['snapshots']:
-  if 'page_type' not in s: s.update(page_type='home',legacy=True)
- oldchecks={key(c):c for c in state.get('checks',[])}; targets=state.get('targets',{}); overrides=load(ROOT/'targets.json',{}); pins=load(ROOT/'archive_keep.json',[])
- # Daily full scan at UTC 00:17; manual workflow runs use FULL_SCAN=1. Retry missing baselines on subsequent full scans.
- full=os.getenv('FULL_SCAN','0')=='1' or datetime.now(timezone.utc).hour<4 or not state.get('last_full_run')
- with sync_playwright() as p:
-  exe=os.getenv('CHROMIUM_PATH'); browser=p.chromium.launch(headless=True,**({'executable_path':exe} if exe else {}))
-  for site in sites:
-   name=site['name']; found=targets.setdefault(name,{})
-   for device,w,h in DEVICES:
-    ctx=browser.new_context(viewport={'width':w,'height':h},device_scale_factor=1,locale='en-US',timezone_id='America/New_York',is_mobile=device=='Mobile',has_touch=device=='Mobile'); page=ctx.new_page(); collected=[]
-    try:
-     visit(page,site['url']); collected=links(page); capture(page,site,device,'home',now,state,checks)
-     if full: capture(page,site,device,'home_full',now,state,checks,True)
-    except Exception as e:
-     if not any(key(c)==(name,device,'home') for c in checks): fail(checks,site,device,'home',now,e)
-     if full and not any(key(c)==(name,device,'home_full') for c in checks): fail(checks,site,device,'home_full',now,e)
-    if full:
-     for typ in ['plp','pdp','campaign']:
-      manual=overrides.get(name,{}).get(typ); target=manual or found.get(typ)
-      # Keep representative PLP/PDP fixed; rediscover campaign from current homepage when possible.
-      if not manual and (not target or typ=='campaign'):
-       target=discover(collected,site['url'],typ) or target
-      if not target or not same_host(target,site['url']): fail(checks,site,device,typ,now,'未发现可验证的同站代表链接；可在 targets.json 补充','unconfigured'); continue
-      found[typ]=target
-      try:
-       visit(page,target); capture(page,site,device,typ,now,state,checks,True)
-       if typ=='plp' and not found.get('pdp') and not overrides.get(name,{}).get('pdp'):
-        candidate=discover(links(page),site['url'],'pdp')
-        if candidate: found['pdp']=candidate
-      except Exception as e: fail(checks,site,device,typ,now,e)
-    ctx.close()
-  browser.close()
- oldchecks.update({key(c):c for c in checks}); ai_mode=ai_review(state,now); kept=retain(state,now,pins)
- size=sum((OUT/s['image']).stat().st_size for s in kept if (OUT/s['image']).exists()); state.update(ai_mode=ai_mode,storage_bytes=size,storage_warning=size>650*1024*1024,sites=sites,snapshots=kept,checks=list(oldchecks.values()),last_run=now,threshold=.08,targets=targets,page_types=TYPES,retention_days=180,last_batch=checks,schema_version=6)
- if full: state['last_full_run']=now
- # Commit manifest before deleting expired, unreferenced image files. Old V5 records are exempt.
- save(FILE,state); save(OUT/'notifications.json',{'events':[s for s in kept if s['kind']=='candidate'],'last_run':now,'schema_version':6})
- used={s['image'] for s in kept};
- for f in SHOTS.glob('*.jpg'):
-  if 'shots/'+f.name not in used: f.unlink()
- print(f'Finished: {len(checks)} checks, {len(kept)} retained versions',flush=True)
-if __name__=='__main__': main()
